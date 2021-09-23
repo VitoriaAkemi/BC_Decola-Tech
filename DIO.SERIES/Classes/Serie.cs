@@ -10,6 +10,8 @@ namespace DIO
 
         public int Ano { get; set; }
 
+        public bool Excluido{get; set;}
+
 
         public Serie(int id, Genero genero, string titulo, string descricao, int ano){
             this.Id = id;
@@ -17,6 +19,7 @@ namespace DIO
             this.Titulo = titulo;
             this.Descricao = descricao;
             this.Ano = ano;
+            this.Excluido = false;
 
         }
 
@@ -41,7 +44,10 @@ namespace DIO
             return this.Id;
         }
 
-
+        public void Excluir()
+        {
+            this.Excluido = true;
+        }
 
     }
 

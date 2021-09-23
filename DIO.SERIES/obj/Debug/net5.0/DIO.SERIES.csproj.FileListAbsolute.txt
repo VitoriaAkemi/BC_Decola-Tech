@@ -1,0 +1,5 @@
+C:\vitoria\cursos\DIO\BC_Decola-Tech\DIO.SERIES\obj\Debug\net5.0\DIO.SERIES.csproj.AssemblyReference.cache
+C:\vitoria\cursos\DIO\BC_Decola-Tech\DIO.SERIES\obj\Debug\net5.0\DIO.SERIES.GeneratedMSBuildEditorConfig.editorconfig
+C:\vitoria\cursos\DIO\BC_Decola-Tech\DIO.SERIES\obj\Debug\net5.0\DIO.SERIES.AssemblyInfoInputs.cache
+C:\vitoria\cursos\DIO\BC_Decola-Tech\DIO.SERIES\obj\Debug\net5.0\DIO.SERIES.AssemblyInfo.cs
+C:\vitoria\cursos\DIO\BC_Decola-Tech\DIO.SERIES\obj\Debug\net5.0\DIO.SERIES.csproj.CoreCompileInputs.cache
