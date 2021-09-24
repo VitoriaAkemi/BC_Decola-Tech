@@ -1,13 +1,13 @@
 ﻿using System;
 
-namespace DIO
+namespace DIO.SERIES
 {
     class Program
     {
-        
+        static SerieRepositorio repositorio = new SerieRepositorio();
         static void Main(string[] args)
         {
-            static SerieRepositorio repositorio = new SerieRepositorio();
+            
             string opcaoUsuario = ObterOpcaoUsuario();
             while (opcaoUsuario.ToUpper() != "X")
             {
@@ -48,7 +48,7 @@ namespace DIO
 
             var lista = repositorio.Lista();
 
-            if (lista.Count = 0)
+            if (lista.Count == 0)
             {
                 Console.WriteLine("Nenhuma série cadastrada.");
                 return;

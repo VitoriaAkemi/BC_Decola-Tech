@@ -1,17 +1,14 @@
-namespace DIO
+using System;
+
+namespace DIO.SERIES
 {
     public class Serie : EntidadeBase
     {
         private Genero Genero { get; set;}
-
         public string Titulo { get; set; }
-
         public string Descricao { get; set; }
-
         public int Ano { get; set; }
-
         public bool Excluido{get; set;}
-
 
         public Serie(int id, Genero genero, string titulo, string descricao, int ano){
             this.Id = id;
@@ -26,7 +23,7 @@ namespace DIO
         public override string ToString()
         {
             string retorno = "";
-            retorno += "Gênero: " + this.Genero + Enviornment.NewLine;
+            retorno += "Gênero: " + this.Genero + Environment.NewLine;
             retorno += "Título: " + this.Titulo + Environment.NewLine;
             retorno += "Descrição: " + this.Descricao + Environment.NewLine;
             retorno += "Ano de Início: " + this.Ano;
