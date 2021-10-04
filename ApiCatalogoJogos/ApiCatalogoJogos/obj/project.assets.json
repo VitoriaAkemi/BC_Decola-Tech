@@ -1,11 +1,11 @@
 {
   "version": 3,
   "targets": {
-    "net5.0": {}
+    ".NETCoreApp,Version=v3.1": {}
   },
   "libraries": {},
   "projectFileDependencyGroups": {
-    "net5.0": []
+    ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
     "C:\\Users\\user\\.nuget\\packages\\": {},
@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\vitoria\\cursos\\DIO\\BC_Decola-Tech\\DIO.SERIES\\DIO.SERIES.csproj",
-      "projectName": "DIO.SERIES",
-      "projectPath": "C:\\vitoria\\cursos\\DIO\\BC_Decola-Tech\\DIO.SERIES\\DIO.SERIES.csproj",
+      "projectUniqueName": "C:\\Users\\user\\source\\repos\\ApiCatalogoJogos\\ApiCatalogoJogos\\ApiCatalogoJogos.csproj",
+      "projectName": "ApiCatalogoJogos",
+      "projectPath": "C:\\Users\\user\\source\\repos\\ApiCatalogoJogos\\ApiCatalogoJogos\\ApiCatalogoJogos.csproj",
       "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "C:\\vitoria\\cursos\\DIO\\BC_Decola-Tech\\DIO.SERIES\\obj\\",
+      "outputPath": "C:\\Users\\user\\source\\repos\\ApiCatalogoJogos\\ApiCatalogoJogos\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
@@ -29,15 +29,15 @@
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "net5.0"
+        "netcoreapp3.1"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net5.0": {
-          "targetAlias": "net5.0",
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "projectReferences": {}
         }
       },
@@ -48,8 +48,8 @@
       }
     },
     "frameworks": {
-      "net5.0": {
-        "targetAlias": "net5.0",
+      "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
         "imports": [
           "net461",
           "net462",
@@ -61,6 +61,9 @@
         "assetTargetFallback": true,
         "warn": true,
         "frameworkReferences": {
+          "Microsoft.AspNetCore.App": {
+            "privateAssets": "none"
+          },
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
