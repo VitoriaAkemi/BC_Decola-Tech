@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace ApiCatalogoJogos.Services
 {
-    public class JogoService
+    public class JogoService : IJogoService
     {
         private readonly IJogoRepository _jogoRepository;
 
@@ -19,10 +19,10 @@ namespace ApiCatalogoJogos.Services
             _jogoRepository = jogoRepository;
         }
 
-        public async Task<List<JogoViewModel>> Obter(int pagina, int quatidade)
+        public async Task<List<JogoViewModel>> Obter(int pagina, int quantidade)
         {
-            var jogos = await _jogoRepository.Obter(pagina, quatidade);
-            
+            var jogos = await _jogoRepository.Obter(pagina, quantidade);
+
             return jogos.Select(jogo => new JogoViewModel
             {
                 Id = jogo.Id,
@@ -30,12 +30,13 @@ namespace ApiCatalogoJogos.Services
                 Produtora = jogo.Produtora,
                 Preco = jogo.Preco
             })
-                .ToList();
+                               .ToList();
         }
 
         public async Task<JogoViewModel> Obter(Guid id)
         {
             var jogo = await _jogoRepository.Obter(id);
+
             if (jogo == null)
                 return null;
 
@@ -74,7 +75,7 @@ namespace ApiCatalogoJogos.Services
             };
         }
 
-        public async Task Atulizar(Guid id, JogoInputModel jogo)
+        public async Task Atualizar(Guid id, JogoInputModel jogo)
         {
             var entidadeJogo = await _jogoRepository.Obter(id);
 
@@ -102,7 +103,7 @@ namespace ApiCatalogoJogos.Services
 
         public async Task Remover(Guid id)
         {
-            var jogo = _jogoRepository.Obter(id);
+            var jogo = await _jogoRepository.Obter(id);
 
             if (jogo == null)
                 throw new JogoNaoCadastradoException();
@@ -112,8 +113,7 @@ namespace ApiCatalogoJogos.Services
 
         public void Dispose()
         {
-            _jogoRepository.Dispose();
+            _jogoRepository?.Dispose();
         }
-
     }
 }

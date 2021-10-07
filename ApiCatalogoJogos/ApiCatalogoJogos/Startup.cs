@@ -1,3 +1,4 @@
+using ApiCatalogoJogos.Middleware;
 using ApiCatalogoJogos.Repositories;
 using ApiCatalogoJogos.Services;
 using Microsoft.AspNetCore.Builder;
@@ -41,7 +42,11 @@ namespace ApiCatalogoJogos
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
+
+
             }
+
+            app.UseMiddleware<ExceptionMiddleware>();
 
             app.UseHttpsRedirection();
 
